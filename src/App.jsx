@@ -14,9 +14,6 @@ export default function App() {
         </ul>
       </section>
       <AboutMe />
-      <AboutMe />
-      <AboutMe />
-      <AboutMe />
     </div>
   );
 }
