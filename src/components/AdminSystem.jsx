@@ -16,7 +16,7 @@ const AdminSystem = () => {
     position: ""
   });
 
-  const handleHomeClick = () => {
+  const handleUserClick = () => {
     setShowTable(!showTable);
     setShowAdminForm(false);
   };
@@ -53,7 +53,7 @@ const AdminSystem = () => {
     <div className="p-6">
       <div className="py-4">
         <button
-          onClick={handleHomeClick}
+          onClick={handleUserClick}
           className="bg-white mx-8 p-4 rounded shadow-xl"
         >
           User Home Sector
