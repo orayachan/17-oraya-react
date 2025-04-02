@@ -1,9 +1,10 @@
 import { Link } from "react-router";
-// import React, { useState } from "react";
+// import React, { useEffect, useState } from "react";
+// import axios from "axios";
 
 const Admin = () => {
   return (
-    <div className="h-screen bg-[#e8e8e8] text-center mt-16">
+    <div className="w-screen bg-[#e8e8e8] text-center mt-16">
       <p className="text-4xl font-bold">Generation Thailand</p>
       <p className="text-4xl font-bold">Home - Admin Sector</p>
       <section className="py-8">
@@ -14,9 +15,9 @@ const Admin = () => {
             <Link to="/admin">Admin Home Sector</Link>
         </button>
       </section>
-      <section>
-        <p className="text-2xl font-bold py-2">Create User Here:</p>
-        <form>
+      <section className="py-8">
+        <p className="text-2xl font-bold py-2 mt-16">Create User Here:</p>
+        <form className="m-auto">
             <input type="text" id="name" name="name" placeholder="Name" className="bg-white rounded p-2 mx-4 w-56"></input>
             <input type="text" id="lastname" name="lastname" placeholder="Last Name" className="bg-white rounded p-2 mx-4 w-56"></input>
             <input type="text" id="position" name="position" placeholder="Position" className="bg-white rounded p-2 mx-4 w-56"></input>
@@ -24,7 +25,7 @@ const Admin = () => {
         </form>
       </section>
       <section>
-        <p className="text-2xl font-bold py-2">Create User Here:</p>
+        <p className="text-2xl font-bold py-2 mt-16">Create User Here:</p>
         <table>
             <thead>
                 <tr>
@@ -36,10 +37,10 @@ const Admin = () => {
             </thead>
             <tbody>
                 <tr>
-                    <td>{person.name}</td>
-                    <td>{person.lastName}</td>
-                    <td>{person.position}</td>
-                    <td>{person.deleteButton}</td>
+                    {/* <td>{person.name}</td> */}
+                    {/* <td>{person.lastName}</td> */}
+                    {/* <td>{person.position}</td> */}
+                    {/* <td>{person.deleteButton}</td> */}
                 </tr>
             </tbody>
         </table>
@@ -47,5 +48,7 @@ const Admin = () => {
     </div>
   );
 };
+
+
 
 export default Admin;

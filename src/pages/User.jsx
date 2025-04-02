@@ -14,6 +14,27 @@ const User = () => {
             <Link to="/admin">Admin Home Sector</Link>
         </button>
       </section>
+      <section>
+        <p className="text-2xl font-bold py-2 mt-16">Create User Here:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {/* <td>{person.name}</td> */}
+                    {/* <td>{person.lastName}</td> */}
+                    {/* <td>{person.position}</td> */}
+                    {/* <td>{person.deleteButton}</td> */}
+                </tr>
+            </tbody>
+        </table>
+      </section>
     </div>
   );
 };
