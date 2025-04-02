@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import Owner from "./pages/Owner";
 import User from "./pages/User";
+import AdminSystem from "./components/AdminSystem";
 
 const router = createBrowserRouter([
   {
