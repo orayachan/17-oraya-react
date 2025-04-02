@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -7,16 +7,14 @@ const Layout = () => {
       <nav>
         <ul className="text-2xl font-bold flex flex-row justify-end gap-4 pr-4 border-b border-b-gray-500">
           <li className="p-4">
-            Home
-            {/* <Link to="/">Home</Link> */}
+            <Link to="/home">Home</Link>
           </li>
           <li className="p-4">
-            Owner
-            {/* <Link to="/">Home</Link> */}
+            <Link to="/owner">Owner</Link>
           </li>
         </ul>
       </nav>
-      {/* <Outlet /> */}
+      <Outlet />
     </div>
   );
 };

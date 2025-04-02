@@ -1,10 +1,11 @@
-import { Link } from "react-router";
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
-const User = () => {
+const Home = () => {
   return (
     <div className="h-screen bg-[#e8e8e8] text-center mt-16">
       <p className="text-4xl font-bold">Generation Thailand</p>
-      <p className="text-4xl font-bold">Home - User Sector</p>
+      <p className="text-4xl font-bold">React - Assesment</p>
       <section className="py-8">
         <button className="bg-white mx-8 p-4 rounded shadow-xl">
             <Link to="/user">User Home Sector</Link>
@@ -13,8 +14,9 @@ const User = () => {
             <Link to="/admin">Admin Home Sector</Link>
         </button>
       </section>
+      <Outlet />
     </div>
   );
 };
 
-export default User;
+export default Home;
